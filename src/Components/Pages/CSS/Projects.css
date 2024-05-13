@@ -1,0 +1,114 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding: 20px;
+    /* margin-top: 4vw; */
+
+}
+.project_heading{
+    background-color: rgb(226, 215, 197);
+    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#screenshots {
+    display: flex;
+    flex-direction: column;
+    width: 120vw;
+    /* gap: 5vw; */
+  }
+  
+  #screenshots img {
+    width: 50vw; /* Makes images fill the cell */
+    height: 28vw; /* Maintains the aspect ratio of the images */
+  }
+  
+  .project1{
+    border: 2px solid blanchedalmond ;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 5vw;
+    padding: 3vw;
+    margin-top: -5vw;
+  }
+  #description_1{
+    color: blanchedalmond;
+  }
+   .project1 #screenshots h2{
+    color: blanchedalmond;
+  }
+
+  #description_1 #tech-stack{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  #description_1 #tech-stack i{
+    font-size: 2vw;
+  }
+
+  /* //Corousal */
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important; /* Removes the default background image */
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+  content: ''; /* Required: The content property is used with the :after pseudo-element */
+  display: inline-block; /* Ensures the pseudo-element is treated like an inline block */
+  width: 20px; /* Width of the arrow */
+  height: 20px; /* Height of the arrow */
+  background: black; /* Sets the background color to black */
+  mask: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23fff" d="M4.5 0L3 1.5l2.5 2.5L3 6.5 4.5 8l4-4-4-4z"/></svg>') center / contain no-repeat;
+  -webkit-mask: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23fff" d="M4.5 0L3 1.5l2.5 2.5L3 6.5 4.5 8l4-4-4-4z"/></svg>') center / contain no-repeat;
+}
+
+.carousel-control-prev-icon:after {
+  transform: rotate(180deg); /* Rotates the 'next' icon to serve as 'previous' */
+}
+
+
+@media screen and (max-width:900px){
+  
+  .project1{
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    margin-top: 5vw;
+    /* position: relative; */
+    /* z-index: -1; */
+    
+  }
+  #screenshots img {
+     /* Makes images fill the cell */
+    height: 60vw; /* Maintains the aspect ratio of the images */
+  }
+  .project1 #screenshots {
+    width: 90vw;
+  }
+  .project1 h2{
+    font-size: 6vw;
+  }
+  #description_1 h3{
+    font-size: 4vw;
+  }
+  #description_1{
+    font-size: 3vw;
+  }
+  #description_1 #tech-stack i{
+    font-size: 8vw;
+  }
+  #description_1 #tech-stack{
+    gap: 7vw;
+  }
+
+
+
+}
